@@ -37,7 +37,10 @@ class Chronometer {
   } 
 
   computeTwoDigitNumber(value) {
-// brain freeze 
+// brain freeze
+// my thought if (value < 10) return "0"+"(value)"
+return value < 10 ? '0' + value : String(value); // no idea
+
   }
 
   stop() {
@@ -45,7 +48,9 @@ class Chronometer {
   }
 
   reset() {
-    this.currentTime === 0;
+    // this.currentTime === 0; didn't work
+    this.currentTime = 0;
+
   }
 
   split() {
